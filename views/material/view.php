@@ -2,6 +2,7 @@
 
 use yii\helpers\Html;
 use yii\widgets\DetailView;
+use yii\helpers\Url;
 
 /* @var $this yii\web\View */
 /* @var $model app\models\Material */
@@ -11,6 +12,8 @@ $this->params['breadcrumbs'][] = ['label' => 'Materials', 'url' => ['index']];
 $this->params['breadcrumbs'][] = $this->title;
 ?>
 <div class="material-view">
+
+
 
     <h1><?= Html::encode($this->title) ?></h1>
 
@@ -23,7 +26,9 @@ $this->params['breadcrumbs'][] = $this->title;
                 'method' => 'post',
             ],
         ]) ?>
-    </p>
+        
+
+    
 
     <?= DetailView::widget([
         'model' => $model,

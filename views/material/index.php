@@ -1,7 +1,9 @@
 <?php
 
 use yii\helpers\Html;
-use yii\grid\GridView;
+//use yii\grid\GridView;
+use kartik\grid\GridView;
+use kartik\grid\DataColumn;
 
 /* @var $this yii\web\View */
 /* @var $searchModel app\models\MaterialSearch */
@@ -12,29 +14,79 @@ $this->params['breadcrumbs'][] = $this->title;
 ?>
 <div class="material-index">
 
+
+
     <h1><?= Html::encode($this->title) ?></h1>
     <?php // echo $this->render('_search', ['model' => $searchModel]); ?>
 
     <p>
         <?= Html::a('Create Material', ['create'], ['class' => 'btn btn-success']) ?>
-    </p>
-    <?= GridView::widget([
-        'dataProvider' => $dataProvider,
-        'filterModel' => $searchModel,
-        'columns' => [
-            ['class' => 'yii\grid\SerialColumn'],
 
-            'material_id',
+    </p>
+
+<?= GridView::widget([
+    'id' => 'kv-grid-demo',
+    'dataProvider'=>$dataProvider,
+    'filterModel'=>$searchModel,
+    //'columns'=>$gridColumns,
+    //'containerOptions'=>['style'=>'overflow: auto'], // only set when $responsive = false
+    'headerRowOptions'=>['class'=>'kartik-sheet-style'],
+    'filterRowOptions'=>['class'=>'kartik-sheet-style'],
+    //'pjax'=>true, // pjax is set to always true for this demo
+    // set your toolbar
+    // 'toolbar'=> [
+    //     ['content'=>
+    //         Html::button('<i class="glyphicon glyphicon-plus"></i>', ['type'=>'button', 'title'=>Yii::t('kvgrid', 'Add Book'), 'class'=>'btn btn-success', 'onclick'=>'alert("This will launch the book creation form.\n\nDisabled for this demo!");']) . ' '.
+    //         Html::a('<i class="glyphicon glyphicon-repeat"></i>', ['grid-demo'], ['data-pjax'=>0, 'class'=>'btn btn-default', 'title'=>Yii::t('kvgrid', 'Reset Grid')])
+    //     ],
+    //     '{export}',
+    //     '{toggleData}',
+    // ],
+    // set export properties
+    'export'=>[
+        'fontAwesome'=>true
+    ],
+    // parameters from the demo form
+    //'bordered'=>$bordered,
+    //'striped'=>$striped,
+    //'condensed'=>$condensed,
+    //'responsive'=>$responsive,
+    //'hover'=>$hover,
+    //'showPageSummary'=>$pageSummary,
+    'panel'=>[
+        'type'=>GridView::TYPE_PRIMARY,
+        //'heading'=>$heading,
+    ],
+    'persistResize'=>true,
+    //'exportConfig'=>$exportConfig,
+
+
+
+        'columns' => [
+            //['class' => 'yii\grid\SerialColumn'],
+
+
+            //['class' => '\kartik\grid\DataColumn',
+            //'attribute' => 'amount',
+            //'pageSummary' => true
+            //],
+
+            'material_id'
+
+
+            ,
             //'mat_identification',
             //'mat_description_pt',
             'mat_description_en',
-            'uom_id',
+            
+            //'uom_id',
+            'uom.uom_code:text:Uom',
             //'mat_list_id',
             'mat_vpn',
             'mat_manufacturer',
             // 'mat_mpn',
             // 'mat_sn',
-            // 'materialtype_id',
+            'materialtype.type_description:text:Type',
             // 'mat_bin',
             // 'mat_inventory_ref',
             // 'equip_id',

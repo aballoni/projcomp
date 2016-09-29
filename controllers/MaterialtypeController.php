@@ -3,31 +3,20 @@
 namespace app\controllers;
 
 use Yii;
-use app\models\Material;
-use app\models\MaterialSearch;
+use app\models\Materialtype;
+use app\models\MaterialtypeSearch;
 use yii\web\Controller;
 use yii\web\NotFoundHttpException;
 use yii\filters\VerbFilter;
-use mPDF;
 
 /**
- * MaterialController implements the CRUD actions for Material model.
+ * MaterialtypeController implements the CRUD actions for Materialtype model.
  */
-class MaterialController extends Controller
+class MaterialtypeController extends Controller
 {
     /**
      * @inheritdoc
      */
-
-    public function actionPdf()
-    {
-        $this->layout = 'main-pdf'; // Criar este layout
-        $html = $this->render('pdf'); // Criar esta view
-        $mpdf = new \mPDF();
-        $mpdf->WriteHTML($html);
-        $mpdf->Output();
-    }
-
     public function behaviors()
     {
         return [
@@ -41,12 +30,12 @@ class MaterialController extends Controller
     }
 
     /**
-     * Lists all Material models.
+     * Lists all Materialtype models.
      * @return mixed
      */
     public function actionIndex()
     {
-        $searchModel = new MaterialSearch();
+        $searchModel = new MaterialtypeSearch();
         $dataProvider = $searchModel->search(Yii::$app->request->queryParams);
 
         return $this->render('index', [
@@ -56,7 +45,7 @@ class MaterialController extends Controller
     }
 
     /**
-     * Displays a single Material model.
+     * Displays a single Materialtype model.
      * @param integer $id
      * @return mixed
      */
@@ -68,16 +57,16 @@ class MaterialController extends Controller
     }
 
     /**
-     * Creates a new Material model.
+     * Creates a new Materialtype model.
      * If creation is successful, the browser will be redirected to the 'view' page.
      * @return mixed
      */
     public function actionCreate()
     {
-        $model = new Material();
+        $model = new Materialtype();
 
         if ($model->load(Yii::$app->request->post()) && $model->save()) {
-            return $this->redirect(['view', 'id' => $model->material_id]);
+            return $this->redirect(['view', 'id' => $model->materialtype_id]);
         } else {
             return $this->render('create', [
                 'model' => $model,
@@ -86,7 +75,7 @@ class MaterialController extends Controller
     }
 
     /**
-     * Updates an existing Material model.
+     * Updates an existing Materialtype model.
      * If update is successful, the browser will be redirected to the 'view' page.
      * @param integer $id
      * @return mixed
@@ -96,7 +85,7 @@ class MaterialController extends Controller
         $model = $this->findModel($id);
 
         if ($model->load(Yii::$app->request->post()) && $model->save()) {
-            return $this->redirect(['view', 'id' => $model->material_id]);
+            return $this->redirect(['view', 'id' => $model->materialtype_id]);
         } else {
             return $this->render('update', [
                 'model' => $model,
@@ -105,7 +94,7 @@ class MaterialController extends Controller
     }
 
     /**
-     * Deletes an existing Material model.
+     * Deletes an existing Materialtype model.
      * If deletion is successful, the browser will be redirected to the 'index' page.
      * @param integer $id
      * @return mixed
@@ -118,15 +107,15 @@ class MaterialController extends Controller
     }
 
     /**
-     * Finds the Material model based on its primary key value.
+     * Finds the Materialtype model based on its primary key value.
      * If the model is not found, a 404 HTTP exception will be thrown.
      * @param integer $id
-     * @return Material the loaded model
+     * @return Materialtype the loaded model
      * @throws NotFoundHttpException if the model cannot be found
      */
     protected function findModel($id)
     {
-        if (($model = Material::findOne($id)) !== null) {
+        if (($model = Materialtype::findOne($id)) !== null) {
             return $model;
         } else {
             throw new NotFoundHttpException('The requested page does not exist.');

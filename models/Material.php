@@ -96,14 +96,14 @@ class Material extends \yii\db\ActiveRecord
     public function attributeLabels()
     {
         return [
-            'material_id' => 'Material ID',
+            'material_id' => 'Mat ID',
             'mat_identification' => 'Mat Identification',
             'mat_description_pt' => 'Mat Description Pt',
-            'mat_description_en' => 'Mat Description En',
-            'uom_id' => 'Uom ID',
+            'mat_description_en' => 'Description',
+            'uom_id' => 'Uom',
             'mat_list_id' => 'Mat List ID',
-            'mat_vpn' => 'Mat Vpn',
-            'mat_manufacturer' => 'Mat Manufacturer',
+            'mat_vpn' => 'VPN',
+            'mat_manufacturer' => 'Manufacturer',
             'mat_mpn' => 'Mat Mpn',
             'mat_sn' => 'Mat Sn',
             'materialtype_id' => 'Materialtype ID',
