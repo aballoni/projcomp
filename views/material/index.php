@@ -3,7 +3,7 @@
 use yii\helpers\Html;
 //use yii\grid\GridView;
 use kartik\grid\GridView;
-use kartik\grid\DataColumn;
+use kartik\grid\DataColumn; 
 
 /* @var $this yii\web\View */
 /* @var $searchModel app\models\MaterialSearch */
@@ -28,11 +28,17 @@ $this->params['breadcrumbs'][] = $this->title;
     'id' => 'kv-grid-demo',
     'dataProvider'=>$dataProvider,
     'filterModel'=>$searchModel,
+
+
+    //--- tudo isso comentado
+
     //'columns'=>$gridColumns,
     //'containerOptions'=>['style'=>'overflow: auto'], // only set when $responsive = false
-    'headerRowOptions'=>['class'=>'kartik-sheet-style'],
-    'filterRowOptions'=>['class'=>'kartik-sheet-style'],
+    //'headerRowOptions'=>['class'=>'kartik-sheet-style'],
+    //'filterRowOptions'=>['class'=>'kartik-sheet-style'],
+    //'rowOptions' => ['class' => GridView::TYPE_DEFAULT],
     //'pjax'=>true, // pjax is set to always true for this demo
+    
     // set your toolbar
     // 'toolbar'=> [
     //     ['content'=>
@@ -42,10 +48,21 @@ $this->params['breadcrumbs'][] = $this->title;
     //     '{export}',
     //     '{toggleData}',
     // ],
+    
+
     // set export properties
+
+    //--- ate aqui
+
+    
+
     'export'=>[
         'fontAwesome'=>true
     ],
+
+    //--- tudo isso comentado
+
+
     // parameters from the demo form
     //'bordered'=>$bordered,
     //'striped'=>$striped,
@@ -53,6 +70,10 @@ $this->params['breadcrumbs'][] = $this->title;
     //'responsive'=>$responsive,
     //'hover'=>$hover,
     //'showPageSummary'=>$pageSummary,
+
+    //--- ate aqui
+
+
     'panel'=>[
         'type'=>GridView::TYPE_PRIMARY,
         //'heading'=>$heading,
