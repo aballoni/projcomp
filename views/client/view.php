@@ -32,10 +32,10 @@ $this->params['breadcrumbs'][] = $this->title;
             'client_description',
             'client_remarks',
             'dep_id',
-            'client_xinterger1',
+/*            'client_xinterger1',
             'client_xboolean1:boolean',
             'client_xdate1',
-            'client_xvarchar1',
+            'client_xvarchar1',*/
         ],
     ]) ?>
 

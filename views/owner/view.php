@@ -30,10 +30,10 @@ $this->params['breadcrumbs'][] = $this->title;
         'attributes' => [
             'owner_id',
             'owner_description',
-            'owner_xdate1',
+/*            'owner_xdate1',
             'owner_xboolean1:boolean',
             'owner_xinterger1',
-            'owner_xvarchar1',
+            'owner_xvarchar1',*/
         ],
     ]) ?>
 

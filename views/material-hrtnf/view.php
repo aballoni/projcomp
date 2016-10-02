@@ -30,6 +30,7 @@ $this->params['breadcrumbs'][] = $this->title;
         'attributes' => [
             'material_hrtnf_id',
             'material_id',
+            'hrtnf_xprod',
             'hrtnf_line',
             'hrtnf_cnf',
             'hrtnf_nat_op',
@@ -45,8 +46,8 @@ $this->params['breadcrumbs'][] = $this->title;
             'hrtnf_rate',
             'hrtnf_icms',
             'hrtnf_n_item',
-            'hrtnf_xprod',
-            'hrtnf_xdate1',
+            
+/*            'hrtnf_xdate1',
             'hrtnf_xdate2',
             'hrtnf_xdate3',
             'hrtnf_xboolean1:boolean',
@@ -57,7 +58,7 @@ $this->params['breadcrumbs'][] = $this->title;
             'hrtnf_xvarchar3',
             'hrtnf_xinterger1',
             'hrtnf_xinterger2',
-            'hrtnf_xinterger3',
+            'hrtnf_xinterger3',*/
         ],
     ]) ?>
 

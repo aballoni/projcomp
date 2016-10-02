@@ -28,10 +28,10 @@ $this->params['breadcrumbs'][] = $this->title;
     <?= DetailView::widget([
         'model' => $model,
         'attributes' => [
-            'material_cont_id',
+            //'material_cont_id',
             'material_id',
             'cont_line',
-            'cont_blueline',
+            //'cont_blueline',
             'cont_list',
             'cont_or_qty',
             'cont_or_aq_value',
@@ -46,7 +46,7 @@ $this->params['breadcrumbs'][] = $this->title;
             'cont_supl_icms',
             'cont_supl_icms_nf',
             'cont_value_inaccount',
-            'cont_xdate1',
+/*            'cont_xdate1',
             'cont_xdate2',
             'cont_xdate3',
             'cont_xboolean1:boolean',
@@ -57,7 +57,7 @@ $this->params['breadcrumbs'][] = $this->title;
             'cont_xvarchar3',
             'cont_xinterger1',
             'cont_xinterger2',
-            'cont_xinterger3',
+            'cont_xinterger3',*/
         ],
     ]) ?>
 

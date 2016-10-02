@@ -26,9 +26,9 @@ $this->params['breadcrumbs'][] = $this->title;
 
             'equip_id',
             'equip_description',
-            'equip_xdate1',
+/*            'equip_xdate1',
             'equip_xboolean1:boolean',
-            'equip_xinterger1',
+            'equip_xinterger1',*/
             // 'equip_xvarchar1',
 
             ['class' => 'yii\grid\ActionColumn'],

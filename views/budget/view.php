@@ -32,10 +32,10 @@ $this->params['breadcrumbs'][] = $this->title;
             'budget_description',
             'budget_remarks',
             'dep_id',
-            'budget_xvarchar1',
+/*            'budget_xvarchar1',
             'budget_xdate1',
             'budget_xboolean1:boolean',
-            'budget_interger1',
+            'budget_interger1',*/
         ],
     ]) ?>
 

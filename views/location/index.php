@@ -26,10 +26,10 @@ $this->params['breadcrumbs'][] = $this->title;
 
             'location_id',
             'location_description',
-            'location_xdate1',
+/*            'location_xdate1',
             'location_xboolean1:boolean',
-            'location_interger1',
-            // 'location_xvarchar1',
+            'location_interger1',*/
+            //'location_xvarchar1',
 
             ['class' => 'yii\grid\ActionColumn'],
         ],

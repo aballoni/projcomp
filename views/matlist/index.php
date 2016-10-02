@@ -26,9 +26,9 @@ $this->params['breadcrumbs'][] = $this->title;
 
             'mat_list_id',
             'mat_list_description',
-            'mat_list_xinterger1',
-            'mat_list_xdate1',
-            'mat_list_xboolean1:boolean',
+            //'mat_list_xinterger1',
+            //'mat_list_xdate1',
+            //'mat_list_xboolean1:boolean',
             // 'mat_list_xvarchar1',
 
             ['class' => 'yii\grid\ActionColumn'],

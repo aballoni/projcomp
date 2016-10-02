@@ -31,10 +31,10 @@ $this->params['breadcrumbs'][] = $this->title;
             'vendor_id',
             'vendor_description',
             'vendor_remarks',
-            'vendor_xvarchar1',
+/*            'vendor_xvarchar1',
             'vendor_xdate1',
             'vendor_xboolean1:boolean',
-            'vendor_xinterger1',
+            'vendor_xinterger1',*/
         ],
     ]) ?>
 

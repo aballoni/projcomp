@@ -22,13 +22,13 @@ $this->params['breadcrumbs'][] = $this->title;
         'dataProvider' => $dataProvider,
         'filterModel' => $searchModel,
         'columns' => [
-            ['class' => 'yii\grid\SerialColumn'],
+            //['class' => 'yii\grid\SerialColumn'],
 
             'dep_id',
             'dep_description',
             'dep_remarks',
-            'dep_xdate1',
-            'dep_xboolean1:boolean',
+/*            'dep_xdate1',
+            'dep_xboolean1:boolean',*/
             // 'dep_xinterger1',
             // 'dep_xvarchar1',
 

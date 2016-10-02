@@ -27,8 +27,8 @@ $this->params['breadcrumbs'][] = $this->title;
             'uom_id',
             'uom_code',
             'uom_description',
-            'uom_xdate1',
-            'uom_xboolean1:boolean',
+            //'uom_xdate1',
+            //'uom_xboolean1:boolean',
             // 'uom_interger1',
             // 'uom_xvarchar1',
 

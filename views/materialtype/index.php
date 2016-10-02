@@ -26,9 +26,9 @@ $this->params['breadcrumbs'][] = $this->title;
 
             'materialtype_id',
             'type_description',
-            'type_xinterger1',
-            'type_xdate1',
-            'type_xboolean1:boolean',
+            //'type_xinterger1',
+            //'type_xdate1',
+            //'type_xboolean1:boolean',
             // 'type_xvarchar1',
 
             ['class' => 'yii\grid\ActionColumn'],

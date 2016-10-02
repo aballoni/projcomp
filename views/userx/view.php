@@ -33,10 +33,10 @@ $this->params['breadcrumbs'][] = $this->title;
             'userx_password',
             'userx_remarks',
             'dep_id',
-            'userx_xvarchar1',
+/*            'userx_xvarchar1',
             'userx_xdate1',
             'userx_xboolean1:boolean',
-            'userx_xinterger1',
+            'userx_xinterger1',*/
         ],
     ]) ?>
 

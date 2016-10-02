@@ -27,8 +27,8 @@ $this->params['breadcrumbs'][] = $this->title;
             'cost_center_id',
             'cost_description',
             'cost_remarks',
-            'cost_xvarchar1',
-            'cost_xdate1',
+/*            'cost_xvarchar1',
+            'cost_xdate1',*/
             // 'cost_xboolean1:boolean',
             // 'cost_xinterger1',
 

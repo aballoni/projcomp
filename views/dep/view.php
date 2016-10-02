@@ -31,10 +31,10 @@ $this->params['breadcrumbs'][] = $this->title;
             'dep_id',
             'dep_description',
             'dep_remarks',
-            'dep_xdate1',
+/*            'dep_xdate1',
             'dep_xboolean1:boolean',
             'dep_xinterger1',
-            'dep_xvarchar1',
+            'dep_xvarchar1',*/
         ],
     ]) ?>
 
